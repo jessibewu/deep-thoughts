@@ -50,6 +50,12 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
+// *Note:
+// IF w/ Express on the back end, you can define a catch-all route after your other routes with the following code:
+// app.get('*', (req, res) => {
+//   res.status(404).sendFile(path.join(__dirname, './public/404.html'));
+// });
+
 db.once('open', () => {
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
