@@ -2,6 +2,9 @@
   "name": "deep-thoughts",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "v14.17.4"
+  },
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
