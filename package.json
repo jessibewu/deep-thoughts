@@ -26,5 +26,8 @@
   "homepage": "https://github.com/jessibewu/deep-thoughts#readme",
   "devDependencies": {
     "concurrently": "^6.3.0"
+  },
+  "dependencies": {
+    "webpack-cli": "^4.9.1"
   }
 }
